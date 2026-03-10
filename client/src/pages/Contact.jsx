@@ -54,10 +54,10 @@ export default function Contact() {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="section bg-blue-600 text-white">
+      <section className="section bg-[#E192A7] text-white">
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Get In Touch</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+          <p className="text-xl text-[#FCEEF1] max-w-2xl mx-auto">
             Have a project in mind? Let's discuss how we can help your business grow.
           </p>
         </div>
@@ -96,7 +96,7 @@ export default function Contact() {
                     onChange={handleChange}
                     placeholder="John Doe"
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#E192A7]"
                   />
                 </div>
 
@@ -112,7 +112,7 @@ export default function Contact() {
                     onChange={handleChange}
                     placeholder="john@example.com"
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#E192A7]"
                   />
                 </div>
 
@@ -127,7 +127,7 @@ export default function Contact() {
                     value={formData.company}
                     onChange={handleChange}
                     placeholder="Your Company"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#E192A7]"
                   />
                 </div>
 
@@ -143,7 +143,7 @@ export default function Contact() {
                     placeholder="Tell us about your project..."
                     rows="5"
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600 resize-none"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#E192A7] resize-none"
                   ></textarea>
                 </div>
 
@@ -165,7 +165,7 @@ export default function Contact() {
                 <div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">Email</h3>
                   <p className="text-gray-600">
-                    <a href="mailto:info@digitalagency.com" className="text-blue-600 hover:text-blue-800">
+                    <a href="mailto:info@digitalagency.com" className="text-[#E192A7] hover:text-[#cf6f89]">
                       info@digitalagency.com
                     </a>
                   </p>
@@ -174,7 +174,7 @@ export default function Contact() {
                 <div>
                   <h3 className="text-lg font-bold text-gray-900 mb-2">Phone</h3>
                   <p className="text-gray-600">
-                    <a href="tel:+1234567890" className="text-blue-600 hover:text-blue-800">
+                    <a href="tel:+1234567890" className="text-[#E192A7] hover:text-[#cf6f89]">
                       +1 (234) 567-890
                     </a>
                   </p>
@@ -201,13 +201,13 @@ export default function Contact() {
                 <div>
                   <h3 className="text-lg font-bold text-gray-900 mb-4">Follow Us</h3>
                   <div className="flex gap-4">
-                    <a href="#" className="text-gray-400 hover:text-blue-600 transition">
+                    <a href="#" className="text-gray-400 hover:text-[#E192A7] transition">
                       Facebook
                     </a>
-                    <a href="#" className="text-gray-400 hover:text-blue-600 transition">
+                    <a href="#" className="text-gray-400 hover:text-[#E192A7] transition">
                       LinkedIn
                     </a>
-                    <a href="#" className="text-gray-400 hover:text-blue-600 transition">
+                    <a href="#" className="text-gray-400 hover:text-[#E192A7] transition">
                       Instagram
                     </a>
                   </div>

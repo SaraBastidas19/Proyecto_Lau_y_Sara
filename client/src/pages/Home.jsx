@@ -9,27 +9,27 @@ export default function Home() {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="section bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="section bg-gradient-to-r from-[#E192A7] to-[#d87a93] text-white">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="animate-fadeIn">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 We build websites, automations, and AI chatbots that help businesses grow.
               </h1>
-              <p className="text-lg mb-8 text-blue-100">
+              <p className="text-lg mb-8 text-[#FCEEF1]">
                 Transform your business with modern technology solutions designed for small businesses.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/services" className="btn-primary bg-white text-blue-600 hover:bg-gray-100">
+                <Link to="/services" className="btn-primary bg-white text-[#E192A7] hover:bg-gray-100">
                   View Services
                 </Link>
-                <Link to="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-blue-600">
+                <Link to="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-[#E192A7]">
                   Contact Us
                 </Link>
               </div>
             </div>
             <div className="hidden md:block animate-slideUp">
-              <div className="bg-blue-400 rounded-lg h-80 flex items-center justify-center">
+              <div className="bg-[#EAB0BF] rounded-lg h-80 flex items-center justify-center">
                 <span className="text-white text-center">Hero Image Placeholder</span>
               </div>
             </div>
@@ -64,7 +64,7 @@ export default function Home() {
               <p className="text-gray-600 mb-4">
                 Professional websites for businesses including booking systems, SEO optimization, and modern design.
               </p>
-              <Link to="/services" className="text-blue-600 font-semibold hover:text-blue-800">
+              <Link to="/services" className="text-[#E192A7] font-semibold hover:text-[#cf6f89]">
                 Learn More →
               </Link>
             </div>
@@ -75,7 +75,7 @@ export default function Home() {
               <p className="text-gray-600 mb-4">
                 Automate repetitive tasks like lead capture, appointment booking, email workflows, and CRM integrations.
               </p>
-              <Link to="/services" className="text-blue-600 font-semibold hover:text-blue-800">
+              <Link to="/services" className="text-[#E192A7] font-semibold hover:text-[#cf6f89]">
                 Learn More →
               </Link>
             </div>
@@ -86,7 +86,7 @@ export default function Home() {
               <p className="text-gray-600 mb-4">
                 Smart chatbots for WhatsApp and websites that answer customers automatically and capture leads.
               </p>
-              <Link to="/services" className="text-blue-600 font-semibold hover:text-blue-800">
+              <Link to="/services" className="text-[#E192A7] font-semibold hover:text-[#cf6f89]">
                 Learn More →
               </Link>
             </div>
@@ -95,7 +95,7 @@ export default function Home() {
       </section>
 
       {/* Benefits Section */}
-      <section className="section bg-gray-900 text-white">
+      <section className="section bg-[#7A7676] text-white">
         <div className="container-custom">
           <h2 className="text-3xl font-bold text-center mb-12">Why Work With Us?</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -103,7 +103,7 @@ export default function Home() {
               <div className="text-3xl">✓</div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Custom Solutions</h3>
-                <p className="text-gray-300">
+                <p className="text-[#F5F5F5]">
                   We don't use cookie-cutter templates. Every solution is custom-built for your business.
                 </p>
               </div>
@@ -113,7 +113,7 @@ export default function Home() {
               <div className="text-3xl">✓</div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Proven Results</h3>
-                <p className="text-gray-300">
+                <p className="text-[#F5F5F5]">
                   Our clients see an average 40% increase in leads and 60% improvement in efficiency.
                 </p>
               </div>
@@ -123,7 +123,7 @@ export default function Home() {
               <div className="text-3xl">✓</div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Ongoing Support</h3>
-                <p className="text-gray-300">
+                <p className="text-[#F5F5F5]">
                   We provide continuous support and updates to ensure your systems run smoothly.
                 </p>
               </div>
@@ -133,7 +133,7 @@ export default function Home() {
               <div className="text-3xl">✓</div>
               <div>
                 <h3 className="text-xl font-bold mb-2">Affordable Pricing</h3>
-                <p className="text-gray-300">
+                <p className="text-[#F5F5F5]">
                   Enterprise-level solutions at prices designed for small businesses.
                 </p>
               </div>

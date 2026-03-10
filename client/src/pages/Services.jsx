@@ -33,10 +33,10 @@ export default function Services() {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="section bg-blue-600 text-white">
+      <section className="section bg-[#E192A7] text-white">
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+          <p className="text-xl text-[#FCEEF1] max-w-2xl mx-auto">
             Complete digital solutions to transform and grow your business
           </p>
         </div>
@@ -45,9 +45,9 @@ export default function Services() {
       {/* Services Grid */}
       <section className="section">
         <div className="container-custom">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
             {services.map((service, index) => (
-              <div key={index} className="animate-fadeIn" style={{ animationDelay: `${index * 0.1}s` }}>
+              <div key={index} className="animate-fadeIn h-full" style={{ animationDelay: `${index * 0.1}s` }}>
                 <ServiceCard {...service} />
               </div>
             ))}
@@ -74,8 +74,8 @@ export default function Services() {
                   <li>✓ Booking system integration</li>
                 </ul>
               </div>
-              <div className="bg-blue-200 h-64 rounded-lg flex items-center justify-center">
-                <span className="text-blue-600">Website Mockup</span>
+              <div className="bg-[#F7D5DD] h-64 rounded-lg flex items-center justify-center">
+                <span className="text-[#E192A7]">Website Mockup</span>
               </div>
             </div>
           </div>
@@ -130,7 +130,7 @@ export default function Services() {
             {['Starter', 'Professional', 'Enterprise'].map((plan, index) => (
               <div key={index} className="card border-2 border-gray-200">
                 <h3 className="text-xl font-bold mb-4">{plan}</h3>
-                <p className="text-3xl font-bold text-blue-600 mb-6">Custom</p>
+                <p className="text-3xl font-bold text-[#E192A7] mb-6">Custom</p>
                 <ul className="space-y-2 mb-6 text-gray-600">
                   <li>✓ Custom solutions</li>
                   <li>✓ Dedicated support</li>

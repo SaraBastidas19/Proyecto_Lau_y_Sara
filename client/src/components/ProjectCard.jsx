@@ -1,6 +1,6 @@
 export default function ProjectCard({ name, description, category, image }) {
   const categoryColors = {
-    website: 'bg-blue-100 text-blue-800',
+    website: 'bg-[#F7D5DD] text-[#E192A7]',
     automation: 'bg-green-100 text-green-800',
     chatbot: 'bg-purple-100 text-purple-800',
   };
