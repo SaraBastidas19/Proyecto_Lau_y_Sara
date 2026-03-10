@@ -8,10 +8,10 @@ export default function About() {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="section bg-blue-600 text-white">
+      <section className="section bg-[#E192A7] text-white">
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">About Digital Agency</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+          <p className="text-xl text-[#FCEEF1] max-w-2xl mx-auto">
             We're passionate about helping small businesses succeed with technology
           </p>
         </div>
@@ -33,8 +33,8 @@ export default function About() {
                 digital transformation.
               </p>
             </div>
-            <div className="bg-blue-200 h-80 rounded-lg flex items-center justify-center">
-              <span className="text-blue-600">Company Image</span>
+            <div className="bg-[#F7D5DD] h-80 rounded-lg flex items-center justify-center">
+              <span className="text-[#E192A7]">Company Image</span>
             </div>
           </div>
         </div>
@@ -44,8 +44,8 @@ export default function About() {
       <section className="section bg-gray-50">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="bg-blue-200 h-80 rounded-lg flex items-center justify-center order-2 md:order-1">
-              <span className="text-blue-600">Vision Image</span>
+            <div className="bg-[#F7D5DD] h-80 rounded-lg flex items-center justify-center order-2 md:order-1">
+              <span className="text-[#E192A7]">Vision Image</span>
             </div>
             <div className="order-1 md:order-2">
               <h2 className="text-3xl font-bold mb-6 text-gray-900">Our Vision</h2>
@@ -119,24 +119,24 @@ export default function About() {
       </section>
 
       {/* Stats Section */}
-      <section className="section bg-gray-900 text-white">
+      <section className="section bg-[#7A7676] text-white">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-5xl font-bold mb-2">200+</div>
-              <p className="text-gray-300">Projects Delivered</p>
+              <p className="text-[#F5F5F5]">Projects Delivered</p>
             </div>
             <div>
               <div className="text-5xl font-bold mb-2">150+</div>
-              <p className="text-gray-300">Happy Clients</p>
+              <p className="text-[#F5F5F5]">Happy Clients</p>
             </div>
             <div>
               <div className="text-5xl font-bold mb-2">40%</div>
-              <p className="text-gray-300">Avg Lead Increase</p>
+              <p className="text-[#F5F5F5]">Avg Lead Increase</p>
             </div>
             <div>
               <div className="text-5xl font-bold mb-2">5+</div>
-              <p className="text-gray-300">Years Experience</p>
+              <p className="text-[#F5F5F5]">Years Experience</p>
             </div>
           </div>
         </div>
@@ -151,7 +151,7 @@ export default function About() {
               <div key={index} className="card text-center">
                 <div className="w-24 h-24 mx-auto bg-gray-300 rounded-full mb-4"></div>
                 <h3 className="text-xl font-bold mb-2">Team Member {index + 1}</h3>
-                <p className="text-blue-600 font-semibold mb-2">{role}</p>
+                <p className="text-[#E192A7] font-semibold mb-2">{role}</p>
                 <p className="text-gray-600 text-sm">
                   Experienced professional dedicated to delivering excellent results for our clients.
                 </p>

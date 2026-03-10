@@ -48,10 +48,10 @@ export default function Portfolio() {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="section bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="section bg-gradient-to-r from-[#E192A7] to-[#d87a93] text-white">
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Portfolio</h1>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+          <p className="text-xl text-[#FCEEF1] max-w-2xl mx-auto">
             Successful projects delivered to businesses across various industries
           </p>
         </div>
@@ -61,16 +61,16 @@ export default function Portfolio() {
       <section className="section">
         <div className="container-custom">
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <button className="px-6 py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
+            <button className="px-6 py-2 bg-[#E192A7] text-white rounded-lg font-semibold hover:bg-[#d87a93] transition">
               All Projects
             </button>
-            <button className="px-6 py-2 border-2 border-blue-600 text-blue-600 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition">
+            <button className="px-6 py-2 border-2 border-[#E192A7] text-[#E192A7] rounded-lg font-semibold hover:bg-[#E192A7] hover:text-white transition">
               Websites
             </button>
-            <button className="px-6 py-2 border-2 border-blue-600 text-blue-600 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition">
+            <button className="px-6 py-2 border-2 border-[#E192A7] text-[#E192A7] rounded-lg font-semibold hover:bg-[#E192A7] hover:text-white transition">
               Automation
             </button>
-            <button className="px-6 py-2 border-2 border-blue-600 text-blue-600 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition">
+            <button className="px-6 py-2 border-2 border-[#E192A7] text-[#E192A7] rounded-lg font-semibold hover:bg-[#E192A7] hover:text-white transition">
               Chatbots
             </button>
           </div>

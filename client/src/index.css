@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FFF5F6;
 }
 
 .smooth-scroll {
@@ -11,15 +12,32 @@ body {
 }
 
 .btn-primary {
-  @apply inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-300;
+  @apply inline-block px-6 py-3 text-white font-semibold rounded-lg transition-colors duration-300;
+  background-color: #F2BDC7;
+}
+
+.btn-primary:hover {
+  background-color: #e7a9b5;
 }
 
 .btn-secondary {
-  @apply inline-block px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-900 transition-colors duration-300;
+  @apply inline-block px-6 py-3 text-white font-semibold rounded-lg transition-colors duration-300;
+  background-color: #F2BDC7;
+}
+
+.btn-secondary:hover {
+  background-color: #e7a9b5;
 }
 
 .btn-outline {
-  @apply inline-block px-6 py-3 border-2 border-blue-600 text-blue-600 font-semibold rounded-lg hover:bg-blue-600 hover:text-white transition-colors duration-300;
+  @apply inline-block px-6 py-3 border-2 font-semibold rounded-lg transition-colors duration-300;
+  border-color: #F2BDC7;
+  color: #d68e9d;
+}
+
+.btn-outline:hover {
+  background-color: #F2BDC7;
+  color: white;
 }
 
 .section {

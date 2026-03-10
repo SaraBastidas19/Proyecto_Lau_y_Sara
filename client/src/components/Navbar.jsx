@@ -1,34 +1,52 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const navLinkClass = ({ isActive }) =>
+    isActive
+      ? 'text-[#F2BDC7] border-b-2 border-[#F2BDC7] pb-0.5 font-semibold transition'
+      : 'text-gray-700 hover:text-[#E192A7] transition';
+
+  const mobileNavLinkClass = ({ isActive }) =>
+    isActive
+      ? 'block py-2 text-[#F2BDC7] border-b-2 border-[#F2BDC7] font-semibold transition'
+      : 'block py-2 text-gray-700 hover:text-[#E192A7] transition';
+
+  const contactBtnClass = ({ isActive }) =>
+    isActive
+      ? 'inline-block px-6 py-3 font-semibold rounded-lg cursor-not-allowed opacity-80 transition text-white'
+      : 'btn-primary';
+
+  const contactBtnStyle = ({ isActive }) =>
+    isActive ? { backgroundColor: '#d87a93' } : {};
+
   return (
-    <nav className="fixed top-0 w-full bg-white shadow-md z-50">
+    <nav className="fixed top-0 w-full bg-[#F9FAFB] shadow-md z-50">
       <div className="container-custom">
         <div className="flex justify-between items-center py-4">
-          <Link to="/" className="text-2xl font-bold text-blue-600">
+          <NavLink to="/" className="text-2xl font-bold text-[#E192A7]">
             Digital Agency
-          </Link>
+          </NavLink>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex gap-8">
-            <Link to="/" className="text-gray-700 hover:text-blue-600 transition">
+          <div className="hidden md:flex gap-8 items-center">
+            <NavLink to="/" end className={navLinkClass}>
               Home
-            </Link>
-            <Link to="/services" className="text-gray-700 hover:text-blue-600 transition">
+            </NavLink>
+            <NavLink to="/services" className={navLinkClass}>
               Services
-            </Link>
-            <Link to="/portfolio" className="text-gray-700 hover:text-blue-600 transition">
+            </NavLink>
+            <NavLink to="/portfolio" className={navLinkClass}>
               Portfolio
-            </Link>
-            <Link to="/about" className="text-gray-700 hover:text-blue-600 transition">
+            </NavLink>
+            <NavLink to="/about" className={navLinkClass}>
               About
-            </Link>
-            <Link to="/contact" className="btn-primary">
+            </NavLink>
+            <NavLink to="/contact" className={contactBtnClass} style={contactBtnStyle}>
               Contact Us
-            </Link>
+            </NavLink>
           </div>
 
           {/* Mobile Menu Button */}
@@ -45,41 +63,47 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden pb-4 space-y-2">
-            <Link
+            <NavLink
               to="/"
-              className="block py-2 text-gray-700 hover:text-blue-600 transition"
+              end
+              className={mobileNavLinkClass}
               onClick={() => setIsOpen(false)}
             >
               Home
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/services"
-              className="block py-2 text-gray-700 hover:text-blue-600 transition"
+              className={mobileNavLinkClass}
               onClick={() => setIsOpen(false)}
             >
               Services
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/portfolio"
-              className="block py-2 text-gray-700 hover:text-blue-600 transition"
+              className={mobileNavLinkClass}
               onClick={() => setIsOpen(false)}
             >
               Portfolio
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/about"
-              className="block py-2 text-gray-700 hover:text-blue-600 transition"
+              className={mobileNavLinkClass}
               onClick={() => setIsOpen(false)}
             >
               About
-            </Link>
-            <Link
+            </NavLink>
+            <NavLink
               to="/contact"
-              className="block btn-primary"
+              className={({ isActive }) =>
+                isActive
+                  ? 'block px-6 py-3 font-semibold rounded-lg cursor-not-allowed opacity-80 text-white text-center'
+                  : 'block btn-primary text-center'
+              }
+              style={contactBtnStyle}
               onClick={() => setIsOpen(false)}
             >
               Contact Us
-            </Link>
+            </NavLink>
           </div>
         )}
       </div>
